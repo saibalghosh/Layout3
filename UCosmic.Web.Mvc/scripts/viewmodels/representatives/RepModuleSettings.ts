@@ -1,17 +1,23 @@
-/// <reference path="../../typings/jquery/jquery.d.ts" />
-/// <reference path="../../typings/jqueryui/jqueryui.d.ts" />
-/// <reference path="../../typings/knockout/knockout.d.ts" />
-/// <reference path="../../typings/knockout.mapping/knockout.mapping.d.ts" />
-/// <reference path="../../typings/knockout.validation/knockout.validation.d.ts" />
-/// <reference path="../../typings/kendo/kendo.all.d.ts" />
-/// <reference path="../../sammy/sammy-0.7.1.js" />
-/// <reference path="../../app/SideSwiper.js" />
+/// <reference path="../../jquery/jquery-1.8.d.ts" />
+/// <reference path="../../jquery/jqueryui-1.9.d.ts" />
+/// <reference path="../../ko/knockout-2.2.d.ts" />
+/// <reference path="../../ko/knockout.mapping-2.0.d.ts" />
+/// <reference path="../../ko/knockout.extensions.d.ts" />
+/// <reference path="../../ko/knockout.validation.d.ts" />
+/// <reference path="../../kendo/kendouiweb.d.ts" />
+/// <reference path="../../app/SideSwiper.ts" />
+/// <reference path="../../sammy/sammyjs-0.7.d.ts" />
 
-module ViewModels.RepModuleSettings {
+module ViewModels.RepModuleSettings{
 
-    export class RepModuleSettings {
 
-        constructor(public welcomeMessage:string, public emailMessage:string){
+    export class RepModuleSettings{
+        welcomeMessage: string;
+        emailMessage: string;
+
+        constructor(welcomeMessage:string, emailMessage:string){
+            this.welcomeMessage = welcomeMessage;
+            this.emailMessage = emailMessage;
         }
     }
 
