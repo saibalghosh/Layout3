@@ -2655,6 +2655,7 @@
     <Content Include="Views\MyProfile\_GeographicExpertises.cshtml" />
     <Content Include="Views\MyProfile\_LanguageExpertises.cshtml" />
     <Content Include="Views\MyProfile\_Degrees.cshtml" />
+    <Content Include="Views\Representatives\Settings.cshtml" />
     <Content Include="Views\Agreements\Form.cshtml" />
     <Content Include="Views\Agreements\Index.cshtml" />
     <Content Include="Views\Agreements\_Bib.cshtml" />
