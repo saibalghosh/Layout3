@@ -9,8 +9,12 @@
         ko.applyBindings(repModuleSettingsViewModel, $('data-current-module=representatives')[0]);
         repModuleSettingsViewModel.sammy.run();
     </script>
-}
 
+    <script src="~/scripts/tinymce/tiny_mce.js"></script>
+    <script>
+        tinymce.init({ selector: 'textarea' });
+    </script>
+}
 <div class="content fixed to-top" data-current-module="representatives">
     <div data-side-swiper="root">
         <div data-side-swiper="deck">
@@ -30,9 +34,9 @@
                         </div>
                     </aside>
                     <h2>Application Settings</h2>
-                    <h3>Welcome Message</h3>
-                    <div class="advfield">
-                        <textarea>Configure custom content to be displayed before a recruitment agency applies to represent you</textarea>
+                    <div class="label">
+                        <textarea>Welcome Message <br />
+                         Configure custom content to be displayed before a recruitment agency applies to represent you</textarea>
                     </div>
                     <h3>Notifications</h3>
                 </form>
